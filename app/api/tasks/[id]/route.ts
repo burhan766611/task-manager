@@ -69,7 +69,7 @@ export async function DELETE(
     const existing = await prisma.task.findFirst({
       where: {
         id,
-        userId: user.userId,
+        userId: id,
       },
     });
 
